@@ -182,11 +182,10 @@ a:focus-visible {
   gap: 7px;
   margin-left: 4px;
   padding: 7px 10px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   border-radius: 7px;
-  background: var(--ink);
-  box-shadow: 0 1px 2px rgb(15 15 15 / 18%);
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--ink);
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
@@ -194,7 +193,7 @@ a:focus-visible {
 }
 
 .education-personal-note .projects-cta:hover {
-  background: #4b4943;
+  background: var(--surface);
   text-decoration: none;
   transform: translateY(-1px);
 }
