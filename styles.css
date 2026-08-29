@@ -609,6 +609,24 @@ a:focus-visible {
   }
 }
 
+@media (max-width: 420px) {
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding-block: 9px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .site-nav a {
+    padding-inline: 5px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
