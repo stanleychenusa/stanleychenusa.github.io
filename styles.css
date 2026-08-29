@@ -206,6 +206,10 @@ a:focus-visible {
   margin-top: 62px;
 }
 
+.doc-hero + .doc-section {
+  margin-top: 64px;
+}
+
 .doc-section h2 {
   margin: 0 0 18px;
   font-size: 19px;
