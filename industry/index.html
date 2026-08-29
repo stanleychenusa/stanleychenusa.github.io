@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://stanleychenusa.github.io/industry/">
     <link rel="icon" href="/favicon-avatar-transparent.png" type="image/png">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css?v=20260829-timeline">
   </head>
   <body>
     <header class="site-header">
@@ -17,8 +17,8 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="/industry/" aria-current="page">Work</a>
           <a href="/research/">Research</a>
-          <a href="/projects/">Projects</a>
           <a href="/education/">Education</a>
+          <a href="/projects/">Projects</a>
         </nav>
       </div>
     </header>
@@ -32,10 +32,71 @@
         <p>A little more context on the teams I have joined, the work I owned, and what I learned along the way.</p>
       </section>
 
+      <section class="career-timeline" aria-label="Career timeline">
+        <div class="timeline-scroll">
+          <svg class="timeline-graphic" viewBox="0 0 1180 230" role="img" aria-labelledby="timeline-title timeline-description" xmlns="http://www.w3.org/2000/svg">
+            <title id="timeline-title">Career timeline</title>
+            <desc id="timeline-description">Four red line segments represent freshman through senior school years. Black dots between them represent summer research and internship experiences. A graduation cap marks graduation, followed by two job segments.</desc>
+
+            <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+              <g text-anchor="middle" fill="#37352f">
+                <line x1="45" y1="105" x2="145" y2="105" stroke="#e6535a" stroke-width="5" stroke-linecap="round" />
+
+                <a class="timeline-link" href="/research/#undergraduate-summer-research-assistant" aria-label="Go to Undergraduate Summer Research Assistant on the Research page">
+                  <circle cx="162.5" cy="105" r="9" fill="#9b9a97" stroke="#ffffff" stroke-width="4" />
+                  <text class="timeline-link-label" x="162.5" y="147" font-size="18" font-weight="620">Research</text>
+                  <text x="162.5" y="168" fill="#787774" font-size="10">Summer 2022</text>
+                </a>
+
+                <line x1="180" y1="105" x2="280" y2="105" stroke="#e6535a" stroke-width="5" stroke-linecap="round" />
+
+                <a class="timeline-link" href="/research/#undergraduate-summer-research-assistant" aria-label="Go to Undergraduate Summer Research Assistant on the Research page">
+                  <circle cx="300" cy="105" r="9" fill="#9b9a97" stroke="#ffffff" stroke-width="4" />
+                  <text class="timeline-link-label" x="300" y="147" font-size="18" font-weight="620">Research</text>
+                  <text x="300" y="168" fill="#787774" font-size="10">Summer 2023</text>
+                </a>
+
+                <line x1="320" y1="105" x2="420" y2="105" stroke="#e6535a" stroke-width="5" stroke-linecap="round" />
+
+                <a class="timeline-link" href="#ai-ml-engineer-intern" aria-label="Go to AI/ML Engineer Intern">
+                  <circle cx="440" cy="105" r="9" fill="#9b9a97" stroke="#ffffff" stroke-width="4" />
+                  <text class="timeline-link-label" x="440" y="147" font-size="18" font-weight="620">Internship</text>
+                  <text x="440" y="168" fill="#787774" font-size="10">Summer 2024</text>
+                </a>
+
+                <line x1="460" y1="105" x2="560" y2="105" stroke="#e6535a" stroke-width="5" stroke-linecap="round" />
+
+                <text x="610" y="115" font-size="30" aria-label="Graduation">🎓</text>
+              </g>
+
+              <g text-anchor="middle">
+                <a class="timeline-link" href="#ai-data-engineer" aria-label="Go to first job post-grad, AI and Data Engineer">
+                  <svg x="700" y="20" width="150" height="45" viewBox="176 894 2048 612" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                    <image href="/merck-logo.png" width="2400" height="2400" />
+                  </svg>
+                  <path d="M 650 76 H 870 L 900 105 L 870 134 H 650 L 682 105 Z" fill="#9b9a97" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" />
+                  <text class="timeline-link-label" x="775" y="169" fill="#37352f" font-size="20" font-weight="720">First job post-grad</text>
+                  <text x="775" y="196" fill="#9b9a97" font-size="12">2025–26</text>
+                </a>
+
+                <a class="timeline-link" href="#data-scientist" aria-label="Go to second job post-grad, Data Scientist">
+                  <svg x="923" y="32" width="190" height="20" viewBox="580 2406 4077 423" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                    <image href="/chubb-logo.png" width="5236" height="5236" />
+                  </svg>
+                  <path d="M 885 76 H 1120 L 1150 105 L 1120 134 H 885 L 917 105 Z" fill="#37352f" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" />
+                  <text class="timeline-link-label" x="1018" y="169" fill="#37352f" font-size="20" font-weight="720">Second job post-grad</text>
+                  <text x="1018" y="196" fill="#9b9a97" font-size="12">2026–Now</text>
+                </a>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </section>
+
       <section class="experience-section" aria-label="Industry experience entries">
-        <div class="experience-list">
-          <article class="experience-entry">
-            <div class="entry-heading"><div><p class="entry-organization">Chubb · New York, NY</p><h2>Data Scientist</h2></div><span class="entry-period">Mar 2026 — Present</span></div>
+        <div class="experience-list work-experience-list">
+          <article class="experience-entry" id="data-scientist">
+            <div class="entry-heading"><div class="entry-identity"><img class="company-logo" src="/chubb-logo.png" alt="" width="40" height="40" aria-hidden="true"><div><p class="entry-organization">Chubb · New York, NY</p><h2>Data Scientist</h2></div></div><span class="entry-period">Mar 2026 — Present</span></div>
             <p class="entry-summary">I work on model development and evaluation for property and casualty insurance, with a current focus on D&amp;O frequency and pricing optimization.</p>
             <ul class="entry-details">
               <li>Led calibration of a D&amp;O insurance frequency model, engineering and evaluating four candidate replacement variables to address instability in a key predictor.</li>
@@ -44,8 +105,8 @@
             </ul>
             <div class="entry-tags" aria-label="Topics and methods"><span>Insurance analytics</span><span>Predictive modeling</span><span>Model evaluation</span></div>
           </article>
-          <article class="experience-entry">
-            <div class="entry-heading"><div><p class="entry-organization">Merck · Rahway, NJ</p><h2>AI &amp; Data Engineer</h2></div><span class="entry-period">Jul 2025 — Mar 2026</span></div>
+          <article class="experience-entry" id="ai-data-engineer">
+            <div class="entry-heading"><div class="entry-identity"><img class="company-logo" src="/merck-logo.png" alt="" width="40" height="40" aria-hidden="true"><div><p class="entry-organization">Merck · Rahway, NJ</p><h2>AI &amp; Data Engineer</h2></div></div><span class="entry-period">Jul 2025 — Mar 2026</span></div>
             <p class="entry-summary">Built data and AI systems for cybersecurity operations, vulnerability reporting, and production ETL workflows.</p>
             <ul class="entry-details">
               <li>Created an intelligence and internal-data ingestion pipeline that generated GPT-powered cybersecurity threat models, saving roughly 300 hours of manual work and $28,800 per month.</li>
@@ -54,8 +115,8 @@
             </ul>
             <div class="entry-tags" aria-label="Topics and methods"><span>AI engineering</span><span>Data pipelines</span><span>Cybersecurity</span></div>
           </article>
-          <article class="experience-entry">
-            <div class="entry-heading"><div><p class="entry-organization">Merck · Rahway, NJ</p><h2>AI/ML Engineer Intern</h2></div><span class="entry-period">Jun 2024 — Aug 2024</span></div>
+          <article class="experience-entry" id="ai-ml-engineer-intern">
+            <div class="entry-heading"><div class="entry-identity"><img class="company-logo" src="/merck-logo.png" alt="" width="40" height="40" aria-hidden="true"><div><p class="entry-organization">Merck · Rahway, NJ</p><h2>AI/ML Engineer Intern</h2></div></div><span class="entry-period">Jun 2024 — Aug 2024</span></div>
             <p class="entry-summary">Prototyped applied AI systems spanning knowledge retrieval, computer vision, and language-model tuning.</p>
             <ul class="entry-details">
               <li>Built a Neo4j-based proof of concept to improve RAG search accuracy for animal-health pharmaceutical products.</li>

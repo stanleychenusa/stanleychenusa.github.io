@@ -176,6 +176,29 @@ a:focus-visible {
   text-decoration-color: currentColor;
 }
 
+.education-personal-note .projects-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 4px;
+  padding: 7px 10px;
+  border: 1px solid var(--ink);
+  border-radius: 7px;
+  background: var(--ink);
+  box-shadow: 0 1px 2px rgb(15 15 15 / 18%);
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: background 140ms ease, transform 140ms ease;
+}
+
+.education-personal-note .projects-cta:hover {
+  background: #4b4943;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
 .doc-lede strong {
   color: var(--ink);
   font-weight: 650;
@@ -365,6 +388,49 @@ a:focus-visible {
   margin-bottom: 48px;
 }
 
+.career-timeline {
+  margin: -6px 0 0;
+}
+
+.timeline-scroll {
+  overflow-x: auto;
+  padding-block: 16px 8px;
+  border-block: 1px solid var(--line);
+  scrollbar-color: #d7d7d3 transparent;
+  scrollbar-width: thin;
+}
+
+.timeline-graphic {
+  display: block;
+  width: 100%;
+  min-width: 760px;
+  height: auto;
+}
+
+.timeline-link {
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.timeline-link:hover {
+  opacity: 0.72;
+}
+
+.timeline-link:hover .timeline-link-label,
+.timeline-link:focus-visible .timeline-link-label {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.timeline-link:focus-visible {
+  outline: none;
+}
+
+.timeline-link:focus-visible circle,
+.timeline-link:focus-visible path {
+  stroke: #e6535a;
+}
+
 .starter-note {
   margin-bottom: 64px;
 }
@@ -373,9 +439,17 @@ a:focus-visible {
   border-top: 1px solid var(--line);
 }
 
+.work-experience-list {
+  border-top: 0;
+}
+
 .experience-entry {
   padding-block: 36px 40px;
   border-bottom: 1px solid var(--line);
+}
+
+.experience-entry[id] {
+  scroll-margin-top: 96px;
 }
 
 .entry-heading {
@@ -392,7 +466,8 @@ a:focus-visible {
   gap: 12px;
 }
 
-.school-logo {
+.school-logo,
+.company-logo {
   display: block;
   flex: 0 0 40px;
   width: 40px;
@@ -589,6 +664,12 @@ a:focus-visible {
 
   .doc-callout {
     margin-block: 44px 52px;
+  }
+
+  .timeline-scroll {
+    margin-inline: -16px;
+    padding-inline: 16px;
+    scroll-snap-type: x proximity;
   }
 
   .entry-heading {
