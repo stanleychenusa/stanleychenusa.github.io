@@ -106,6 +106,29 @@ a:focus-visible {
   max-width: 760px;
 }
 
+.home-hero {
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  align-items: center;
+  gap: 48px;
+}
+
+.home-hero-copy {
+  min-width: 0;
+}
+
+.profile-photo {
+  display: block;
+  width: 220px;
+  height: 220px;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: 50% 43%;
+}
+
 .page-emoji {
   margin-bottom: 18px;
   font-size: 60px;
@@ -466,6 +489,19 @@ a:focus-visible {
 
 .footer-links a:hover {
   color: var(--ink);
+}
+
+@media (max-width: 760px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .profile-photo {
+    width: 168px;
+    height: 168px;
+    border-radius: 20px;
+  }
 }
 
 @media (max-width: 640px) {
