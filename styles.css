@@ -148,12 +148,32 @@ a:focus-visible {
 }
 
 .doc-lede,
-.inner-hero > p:last-child {
+.inner-hero > p:last-child:not(.education-personal-note),
+.inner-hero > .education-intro {
   max-width: 700px;
   margin: 22px 0 0;
   color: #575652;
   font-size: clamp(17px, 2.2vw, 20px);
   line-height: 1.65;
+}
+
+.education-personal-note {
+  max-width: 700px;
+  margin: 13px 0 0;
+  color: #676663;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.education-personal-note a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: #b7cae5;
+  text-underline-offset: 3px;
+}
+
+.education-personal-note a:hover {
+  text-decoration-color: currentColor;
 }
 
 .doc-lede strong {
@@ -365,6 +385,21 @@ a:focus-visible {
   gap: 24px;
 }
 
+.entry-identity {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 12px;
+}
+
+.school-logo {
+  display: block;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 .entry-organization {
   margin: 0 0 7px;
   color: var(--muted);
@@ -395,6 +430,33 @@ a:focus-visible {
   color: #575652;
   font-size: 15px;
   line-height: 1.7;
+}
+
+.degree-notes {
+  max-width: 700px;
+  margin: 18px 0 0;
+  color: #575652;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.degree-notes p {
+  margin: 0;
+}
+
+.degree-notes p + p {
+  margin-top: 7px;
+}
+
+.degree-notes a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: #b7cae5;
+  text-underline-offset: 3px;
+}
+
+.degree-notes a:hover {
+  text-decoration-color: currentColor;
 }
 
 .course-label {
