@@ -486,16 +486,6 @@ a:focus-visible {
   margin: 0;
 }
 
-.footer-links {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.footer-links a:hover {
-  color: var(--ink);
-}
-
 @media (max-width: 760px) {
   .home-hero {
     grid-template-columns: 1fr;
