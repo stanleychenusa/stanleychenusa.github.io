@@ -397,6 +397,15 @@ a:focus-visible {
   line-height: 1.7;
 }
 
+.course-label {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .entry-details {
   max-width: 710px;
   margin: 16px 0 0;
