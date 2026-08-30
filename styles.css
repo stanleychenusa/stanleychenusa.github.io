@@ -72,6 +72,13 @@ a:focus-visible {
   letter-spacing: -0.01em;
 }
 
+.wordmark-icon {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
