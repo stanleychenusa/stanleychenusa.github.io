@@ -506,6 +506,17 @@ a:focus-visible {
   line-height: 1.7;
 }
 
+.entry-summary a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: #b7cae5;
+  text-underline-offset: 3px;
+}
+
+.entry-summary a:hover {
+  text-decoration-color: currentColor;
+}
+
 .degree-notes {
   max-width: 700px;
   margin: 18px 0 0;
