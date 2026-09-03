@@ -186,6 +186,7 @@ a:focus-visible {
 
 .doc-lede,
 .inner-hero > p:last-child:not(.education-personal-note),
+.inner-hero > .research-intro,
 .inner-hero > .education-intro {
   max-width: 700px;
   margin: 22px 0 0;
@@ -199,6 +200,29 @@ a:focus-visible {
   margin: 13px 0 0;
   color: #676663;
   font-size: 14px;
+  line-height: 1.7;
+}
+
+.research-interests {
+  max-width: 700px;
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.research-interests h2 {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 720;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+}
+
+.research-interests p {
+  margin: 0;
+  color: #505650;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -596,6 +620,50 @@ a:focus-visible {
   line-height: 1.4;
 }
 
+.entry-advisor {
+  margin: 7px 0 0;
+  color: var(--faint);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.research-projects {
+  margin-top: 24px;
+}
+
+.research-project {
+  padding: 22px 0 2px;
+}
+
+.research-project:first-child {
+  padding-top: 0;
+}
+
+.research-project-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.research-project-heading h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 680;
+  letter-spacing: -0.015em;
+}
+
+.research-project-period {
+  color: var(--faint);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.research-project .entry-summary {
+  margin-top: 14px;
+}
+
 .entry-heading h2 {
   margin: 0;
   font-size: clamp(20px, 3vw, 25px);
@@ -810,6 +878,12 @@ a:focus-visible {
 
   .entry-period {
     justify-self: start;
+  }
+
+  .research-project-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
   }
 
   .experience-entry {
