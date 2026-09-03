@@ -682,6 +682,13 @@ a:focus-visible {
   white-space: nowrap;
 }
 
+.entry-periods {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .entry-summary {
   max-width: 700px;
   margin: 18px 0 0;
@@ -878,6 +885,10 @@ a:focus-visible {
 
   .entry-period {
     justify-self: start;
+  }
+
+  .entry-periods {
+    align-items: flex-start;
   }
 
   .research-project-heading {
